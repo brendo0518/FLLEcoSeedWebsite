@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype &amp; Testing | EcoSeed</title>
+<meta name="description" content="The EcoSeed prototype: our drone, 3D-printed seed dispenser, CAD designs, versions, testing method and a testing dashboard for recording results.">
+<meta name="theme-color" content="#163D2A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" data-page="prototype">
+
+<section class="page-hero">
+  <svg class="topo" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#A8C5A0" stroke-opacity=".16" stroke-width="1.5"><g transform="translate(980 160) rotate(-18)"><ellipse rx="50" ry="28"/><ellipse rx="110" ry="62"/><ellipse rx="180" ry="100"/><ellipse rx="260" ry="144"/><ellipse rx="350" ry="190"/></g></svg>
+  <div class="container">
+    <span class="eyebrow">Prototype &amp; Testing</span>
+    <h1>From Concept to Prototype</h1>
+    <p class="lead">What we have built, how we are testing it, and what we have learned so far. Results appear here only when the team records them.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our prototype</span>
+      <h2>The drone and the dispenser.</h2>
+      <p>Real photos of our own hardware go here. Concept images are never shown as photos of the prototype.</p>
+    </div>
+    <div class="grid cols-2">
+      <figure class="slot reveal" data-slot="drone" data-label="Photo: our real drone" data-caption="Our prototype drone"></figure>
+      <figure class="slot reveal" data-slot="dispenser" data-label="Photo: our 3D-printed dispenser" data-caption="Our 3D-printed dispenser"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">CAD design gallery</span>
+      <h2>How the dispenser was designed.</h2>
+      <p>Add screenshots or renders from your CAD software. Label them as CAD, not photographs.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure class="slot" data-slot="cad1" data-label="CAD view 1" data-caption="CAD"></figure>
+      <figure class="slot" data-slot="cad2" data-label="CAD view 2" data-caption="CAD"></figure>
+      <figure class="slot" data-slot="cad3" data-label="CAD view 3" data-caption="CAD"></figure>
+      <figure class="slot" data-slot="cad4" data-label="CAD view 4" data-caption="CAD"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Versions and design changes</span>
+      <h2>Prototype versions.</h2>
+      <p>Edit this table in <code>prototype.html</code>. Add a row for each version.</p>
+    </div>
+    <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Prototype versions table">
+      <table>
+        <thead><tr><th>Version</th><th>Date</th><th>What it was</th><th>What we changed and why</th></tr></thead>
+        <tbody>
+          <tr><td>V1</td><td><span class="ph">[Date]</span></td><td><span class="ph">[Describe the first design]</span></td><td><span class="ph">[What problem led to the next version]</span></td></tr>
+          <tr><td>V2</td><td><span class="ph">[Date]</span></td><td><span class="ph">[Describe]</span></td><td><span class="ph">[Changes and reasons]</span></td></tr>
+          <tr><td>V3</td><td><span class="ph">[Date]</span></td><td><span class="ph">[Describe]</span></td><td><span class="ph">[Changes and reasons]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Testing methodology</span>
+      <h2>How we test.</h2>
+      <p>Describe the test the same way every time so that results can be compared fairly. Fill in the details for your real tests.</p>
+    </div>
+    <ol class="flow reveal">
+      <li><span class="dot">1</span><p><strong>Define the question</strong><span class="ph">[e.g. what does a "successful release" mean for us?]</span></p></li>
+      <li><span class="dot">2</span><p><strong>Keep conditions the same</strong><span class="ph">[seed type, amount, height, speed, location, weather]</span></p></li>
+      <li><span class="dot">3</span><p><strong>Repeat each test</strong><span class="ph">[number of trials per test]</span></p></li>
+      <li><span class="dot">4</span><p><strong>Record every result</strong>Including failures. Use the dashboard below.</p></li>
+      <li><span class="dot">5</span><p><strong>Change one thing at a time</strong>Then test again to see whether it helped.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="dashboard">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testing dashboard</span>
+      <h2>Record results and see the success rate.</h2>
+      <p>Enter each test, how many trials you ran and how many releases succeeded. The success rate and chart update straight away.</p>
+    </div>
+
+    <div class="note info reveal" style="margin-bottom:24px">
+      <p><span class="tag tag-example">Local only</span> &nbsp;<strong>Results are saved in this browser on this device.</strong> They are not stored on a server and are not shared with other people or devices. Use <em>Copy CSV</em> to export, and keep your own record in a spreadsheet.</p>
+    </div>
+
+    <div id="tester" class="grid cols-2" style="align-items:start">
+      <form id="test-form" class="card flat form reveal" novalidate>
+        <h3>Add a test</h3>
+        <div class="field"><label for="t-name">Test name</label><input type="text" id="t-name" maxlength="80" autocomplete="off" aria-describedby="t-name-err"><p class="err" id="t-name-err"></p></div>
+        <div class="row-2">
+          <div class="field"><label for="t-trials">Number of trials</label><input type="number" id="t-trials" min="1" step="1" inputmode="numeric" aria-describedby="t-trials-err"><p class="err" id="t-trials-err"></p></div>
+          <div class="field"><label for="t-ok">Successful releases</label><input type="number" id="t-ok" min="0" step="1" inputmode="numeric" aria-describedby="t-ok-err"><p class="err" id="t-ok-err"></p></div>
+        </div>
+        <div class="field"><label for="t-notes">Observations <span class="hint">(optional)</span></label><textarea id="t-notes" maxlength="500"></textarea><p class="err"></p></div>
+        <div class="btn-row"><button class="btn btn-primary" type="submit">Add test</button><button class="btn btn-ghost" type="button" id="t-example">Load labelled example</button></div>
+        <div id="t-status" class="status-box" role="status" tabindex="-1" hidden></div>
+      </form>
+
+      <div class="reveal" style="min-width:0">
+        <div id="t-empty" class="empty"><strong>No results recorded yet</strong>Add your first test using the form. Nothing here is invented, and the chart appears once there is data.</div>
+        <div id="t-data" hidden class="stack">
+          <div class="dash-summary" id="t-summary"></div>
+          <div class="chart-box"><h3>Success rate by test</h3><div id="t-chart"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:40px"><h3>Results table</h3></div>
+    <div class="table-wrap reveal" tabindex="0" role="region" aria-label="Results table">
+      <table>
+        <thead><tr><th>Test</th><th class="num">Trials</th><th class="num">Successes</th><th>Success rate</th><th>Observations</th><th><span class="sr-only" style="position:absolute;left:-999px">Actions</span></th></tr></thead>
+        <tbody id="t-body"></tbody>
+      </table>
+    </div>
+    <div class="btn-row" style="margin-top:16px">
+      <button class="btn btn-primary btn-sm" type="button" id="t-copy">Copy CSV</button>
+      <button class="btn btn-ghost btn-sm" type="button" id="t-clear">Clear all</button>
+    </div>
+    <details class="card flat" style="margin-top:16px"><summary>CSV text</summary><label for="t-csv" class="small muted">Select and copy if the Copy button is blocked.</label><textarea id="t-csv" class="csv" readonly></textarea></details>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Learning from testing</span>
+      <h2>Problems, feedback and improvements.</h2>
+      <p>Write these from your real experience. Empty prompts are better than invented ones.</p>
+    </div>
+    <div class="grid cols-3">
+      <article class="card reveal"><h3>Problems encountered</h3><ul class="clean"><li><span class="ph">[e.g. what went wrong in a test]</span></li><li><span class="ph">[another problem]</span></li></ul></article>
+      <article class="card reveal"><h3>Feedback received</h3><ul class="clean"><li><span class="ph">[who gave it, and what they said, only if they agree to be quoted]</span></li><li><span class="ph">[another point]</span></li></ul></article>
+      <article class="card reveal"><h3>Improvements made</h3><ul class="clean"><li><span class="ph">[the change and the problem it fixed]</span></li><li><span class="ph">[another change]</span></li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Video demonstration</span>
+      <h2>See it in action.</h2>
+      <p>Add a link to your demonstration video. It opens in a new tab.</p>
+      <div data-video></div>
+    </div>
+    <figure class="slot reveal" data-slot="testing" data-label="Video thumbnail or testing photo" style="--ratio:16/9"></figure>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Current development status</span>
+      <h2>Where we are today.</h2>
+      <p><span class="status-pill">Prototype stage</span>&nbsp; EcoSeed is still being built and tested. Update the statuses in <code>assets/config.js</code>.</p>
+    </div>
+    <ul class="progress reveal" data-render="progress"></ul>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/tester.js"></script>
+</body>
+</html>

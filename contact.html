@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | EcoSeed</title>
+<meta name="description" content="Contact the EcoSeed student team to share expert feedback, ask about a conservation partnership, or complete our optional feedback survey.">
+<meta name="theme-color" content="#163D2A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main" data-page="contact">
+
+<section class="page-hero">
+  <svg class="topo" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#A8C5A0" stroke-opacity=".16" stroke-width="1.5"><g transform="translate(980 160) rotate(-18)"><ellipse rx="50" ry="28"/><ellipse rx="110" ry="62"/><ellipse rx="180" ry="100"/><ellipse rx="260" ry="144"/><ellipse rx="350" ry="190"/></g></svg>
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Help Us Grow the Idea</h1>
+    <p class="lead">We are students and we want honest advice. Tell us what we have missed, what could go wrong, and how we could do better.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="note reveal" data-config-notice style="margin-bottom:28px">
+      <p><strong>For the team: forms are not connected yet.</strong> The forms below check what people type but do not send it anywhere, and they say so. To turn them on, set <code>formEndpoint</code> in <code>assets/config.js</code> to a form service or server address, then host the site where it can reach that address.</p>
+    </div>
+
+    <div class="split" style="align-items:start">
+      <div class="reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Send us a message.</h2>
+        <p>Use this form for expert feedback, partnership questions or general enquiries. We keep personal details private and only use them to reply.</p>
+        <p class="small muted">Team email: <span data-contact-email></span></p>
+        <p class="small muted">We do not publish student contact details. Please contact the team through the form or the team address above.</p>
+      </div>
+
+      <form class="card flat form reveal" data-form="contact" novalidate>
+        <div class="field"><label for="c-name">Name</label><input type="text" id="c-name" name="name" required data-label="Name" autocomplete="name" aria-describedby="c-name-err"><p class="err" id="c-name-err"></p></div>
+        <div class="field"><label for="c-org">Organisation <span class="hint">(optional)</span></label><input type="text" id="c-org" name="organisation" autocomplete="organization" data-label="Organisation"><p class="err"></p></div>
+        <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" name="email" required data-label="Email" autocomplete="email" aria-describedby="c-email-err"><p class="err" id="c-email-err"></p></div>
+        <div class="field"><label for="c-subject">Subject</label>
+          <select id="c-subject" name="subject" required data-label="Subject" aria-describedby="c-subject-err">
+            <option value="">Choose a subject</option>
+            <option>Expert Feedback</option>
+            <option>Conservation Partnership Enquiry</option>
+            <option>General Enquiry</option>
+            <option>Project Feedback</option>
+          </select><p class="err" id="c-subject-err"></p></div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required data-label="Message" data-min="10" aria-describedby="c-msg-err"></textarea><p class="err" id="c-msg-err"></p></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div class="form-status status-box" role="status" tabindex="-1" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="survey">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Optional expert survey</span>
+      <h2>Share your expertise.</h2>
+      <p>Answer as many or as few questions as you like. Your answers help us improve the design and understand the risks.</p>
+    </div>
+
+    <form class="card flat form reveal" data-form="survey" novalidate>
+      <div class="row-2">
+        <div class="field"><label for="s-name">Name <span class="hint">(optional)</span></label><input type="text" id="s-name" name="name" data-label="Name" autocomplete="name"><p class="err"></p></div>
+        <div class="field"><label for="s-org">Organisation or role <span class="hint">(optional)</span></label><input type="text" id="s-org" name="organisation" data-label="Organisation" autocomplete="organization"><p class="err"></p></div>
+      </div>
+      <div class="field"><label for="s-email">Email <span class="hint">(optional, only if you would like a reply)</span></label><input type="email" id="s-email" name="email" data-label="Email" autocomplete="email" aria-describedby="s-email-err"><p class="err" id="s-email-err"></p></div>
+
+      <div class="field"><label for="s-challenges">1. What are the main challenges in restoration work today?</label><textarea id="s-challenges" name="restoration_challenges"></textarea></div>
+
+      <fieldset class="field"><legend>2. How suitable do you think drone-based seeding is for restoration?</legend>
+        <div class="choices">
+          <label><input type="radio" name="suitability" value="1"> 1 Not suitable</label>
+          <label><input type="radio" name="suitability" value="2"> 2</label>
+          <label><input type="radio" name="suitability" value="3"> 3 Unsure</label>
+          <label><input type="radio" name="suitability" value="4"> 4</label>
+          <label><input type="radio" name="suitability" value="5"> 5 Very suitable</label>
+        </div></fieldset>
+      <div class="field"><label for="s-suit-why">Why? <span class="hint">(optional)</span></label><textarea id="s-suit-why" name="suitability_reason"></textarea></div>
+
+      <fieldset class="field"><legend>3. Which environmental risks concern you? <span class="hint">(tick any)</span></legend>
+        <div class="choices">
+          <label><input type="checkbox" name="risks" value="Disturbing wildlife"> Disturbing wildlife</label>
+          <label><input type="checkbox" name="risks" value="Wrong species or seed source"> Wrong species or seed source</label>
+          <label><input type="checkbox" name="risks" value="Weeds"> Weeds</label>
+          <label><input type="checkbox" name="risks" value="Poor germination"> Poor germination</label>
+          <label><input type="checkbox" name="risks" value="Fire or battery safety"> Fire or battery safety</label>
+          <label><input type="checkbox" name="risks" value="Other"> Other</label>
+        </div></fieldset>
+      <div class="field"><label for="s-risks">Tell us more about the risks <span class="hint">(optional)</span></label><textarea id="s-risks" name="risks_detail"></textarea></div>
+
+      <div class="field"><label for="s-seeds">4. How should native seeds be chosen and sourced?</label><textarea id="s-seeds" name="seed_selection"></textarea></div>
+      <div class="field"><label for="s-cost">5. What do you think about cost and accessibility for organisations like yours?</label><textarea id="s-cost" name="cost_accessibility"></textarea></div>
+      <div class="field"><label for="s-improve">6. What improvements would you suggest?</label><textarea id="s-improve" name="improvements"></textarea></div>
+
+      <div class="field"><div class="choices"><label><input type="checkbox" name="may_quote" value="yes"> We may quote my feedback, with my name and organisation</label></div>
+        <span class="hint">Leave unticked and we will treat your answers as anonymous summary input.</span></div>
+
+      <button class="btn btn-primary" type="submit">Submit survey</button>
+      <div class="form-status status-box" role="status" tabindex="-1" hidden></div>
+    </form>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/forms.js"></script>
+</body>
+</html>
